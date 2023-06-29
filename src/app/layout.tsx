@@ -17,9 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav>
+        <nav className='flex gap-2'>
           <Link href="/">Top</Link>
           <Link href="/about">About</Link>
+          <Link href="/news/1">News1</Link>
+          <Link href="/news/2">News2</Link>
         </nav>
         {children}
         <Script id="gtm-push" dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
